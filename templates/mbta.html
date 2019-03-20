@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MBTAHelper</title>
+</head>
+
+<body>
+<h1 style='color:gold'>MBTA Helper</h1>
+
+<form method="POST" name="mbta">
+    The MBTA Helper is designed to locate the nearest MBTA stop from a given address or location you have selected, and helps to determine whether or not the station is wheelchair accesible.
+    {% if error %}
+    <p style='color:red'>There is an error in your location.</p>
+    {% endif %}
+        <p>
+        Please enter place name and address below:
+    </p>
+    <p>Location</p>
+    <p>
+        <input type="text" size="4" name='place_name'>
+    </p>
+    <p>
+        <input type="submit" value="Forkin' Locate">
+    </p>
+</form>
+</body>
+</html>
+
+
